@@ -6,3 +6,12 @@ class destination(models.Model):
     name = models.CharField(max_length=35)
     image = models.ImageField(upload_to='pics')
     desc= models.TextField()
+
+class book(models.Model):
+    name = models.CharField(max_length=35)
+    image = models.ImageField(upload_to='pics')
+    desc= models.TextField()
+
+
+    def __str__(self):
+        return self.name

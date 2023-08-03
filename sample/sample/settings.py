@@ -73,21 +73,21 @@ WSGI_APPLICATION = 'sample.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        #        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3',
+               'NAME': BASE_DIR / 'db.sqlite3',
 
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'djw_db',
-        # 'HOST': 'localhost',   for my sql
-        # 'USER': 'root',
-        # 'PASSWORD': ''
-
-        #postgre sql
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'djw_db',
-        'HOST': 'localhost',
-        'USER': 'postgres',
-        'PASSWORD': '1234'
+        'HOST': 'localhost',   #for my sql
+        'USER': 'root',
+        'PASSWORD': ''
+
+        # #postgre sql
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'djw_db',
+        # 'HOST': 'localhost',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '1234'
 
     }
 }

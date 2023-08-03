@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+{% block body %}
+<div class="container  ">
+<div class ="row">
+    {% for i in book %}
+<div class="col-5">
+<div class="card  ">
+  <div class="card-body">
+<img src="{{i.image.url}}" class="rounded m-4 "  width="304" height="236">
+    <h5 class="card-title">{{ i.name}}</h5>
+    <p class="card-text">{{i.desc}}</p>
+    <a href="" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+    {% endfor%}
+</div>
+    </div>
+    </div>
+    {% endblock %}
